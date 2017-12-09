@@ -2,14 +2,14 @@
 LIMO is a website for VEHICLES which bulti using react.js.
 
 ## Installation
-click on clone or download button at the right top of a repository.
-choose Download ZIP.
+* click on clone or download button at the right top of a repository.
+* choose Download ZIP.
 
 ## Website features:
-Based on Bootstrap 3.
-Built with react, CSS.
-Fully Responsive Design.
-and much more…
+* Based on Bootstrap 3.
+* Built with react, CSS.
+* Fully Responsive Design.
+* and much more…
 
 ## Credits:
 * photos.
