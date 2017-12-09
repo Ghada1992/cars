@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/font-awesome.css" rel="stylesheet"> 
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/react.css" rel="stylesheet">
+
+  
+  </head>
+  <body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+      class Header extends React.Component{
+       render(){
+        return <div className="row header  full-width-col">
+                    <div className="container">
+                      <div className="row menu">
+                              <div className="col-sm-4">
+                              <h2 className="upper">lim<span className="main-color">o</span></h2>
+                              </div>
+                              <Navbar/>
+                      </div>
+                      <div className="row">
+                        <div className="col-xs-12">
+                          <div className="header-content text-center">
+                            <h1 className="upper">convenience</h1>
+                            <p className="upper"> the highest level of comvort</p>
+                            <button className="upper btn btn-degault more-btn">read more</button>
+                          </div>
+                        </div>
+                      </div>
+                
+                    </div>
+               </div>
+       }
+      }
+
+      class Navbar extends React.Component{
+       render(){
+
+          const pages = ['home', 'blog','about', 'shop', 'contact'];
+          const navLinks =pages.map((page,i) => 
+           <li className="upper" key={i}><a href={'/' + page}> {page} </a></li>
+
+            );
+
+        return <div className="col-sm-8 text-right"> 
+                 <ul className="main-menu">{navLinks}</ul>
+              </div>;          
+       }
+      }
+
+      class Content extends React.Component{
+        render(){
+          return <div>
+                     <Services  n={services}/>
+                     <Welcome/>
+                     <Mission/>
+                     <Vehicles/>
+                     <Contact/>
+            
+                  </div>
+        }
+      }
+
+      class Services extends React.Component{
+        render(){
+          const numbers= this.props.n;
+          const y=numbers.map((x) =><div className="col-md-3 col-sm-6 col-xs-12 text-center" key={x.id}>
+                                       <h3 className="upper">{x.title}</h3>
+                                       <h5>{x.num}</h5>
+                                       <p>{x.content}</p>
+                                       <a href="#" className="upper" >{x.link}   
+                                       <i className="fa fa-arrow-right"></i></a>
+                                      </div>);
+
+            return  <div className="row services">
+                     <div className="container ghada">
+                           {y}
+                      </div>
+                     </div>
+                     
+
+          }
+      }
+
+      const services=[
+           {id:1, title: "corporate", num:"01", content:"Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when.", link: "more info"},
+           {id:2, title: "airport",  num:"02", content:"Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when.", link: "more info"},
+           {id:3, title: "wedding",  num:"03",  content:"Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when.", link: "more info"},
+           {id:4, title: "corporate",  num:"04",  content:"Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when.", link: "more info"}
+      ];
+
+      class Welcome extends React.Component{
+        render(){
+          return <div className="row weclome">
+                    <div className="container">
+                        <div className="col-xs-6">
+                          <img src="images/022.png" className="img-responsive"/>
+                        </div>  
+
+                        <div className="col-xs-6 text-center welcome-content">
+                            <h3 className="upper">hello</h3>
+                            <p>Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when.</p>
+                            <a href="#" className="upper" >more info   
+                            <i className="fa fa-arrow-right"></i></a>
+                        </div>     
+                      </div> 
+                    </div>
+          }
+      }
+
+      class Mission extends React.Component{
+        render(){
+          return <div className="row mission">
+                 <div className="container ">
+                       <div className="col-xs-6 text-center mission-content">
+                          <h3 className="upper">Mission</h3>
+                          <p>Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the when.</p>
+                          <a href="#" className="upper" >more info   
+                          <i className="fa fa-arrow-right"></i></a> 
+                       </div>
+                       <div className="col-xs-6">
+                          <img src="images/01.png" className="img-responsive"/>
+                       </div>       
+                    </div>
+                   </div> 
+        }
+      }
+
+      class Vehicles extends React.Component{
+        render(){
+        return <div className="row vehicles">
+                    <div className="container">
+                        <div className="col-xs-6">
+                           <img src="images/03.png" className="img-responsive"/>
+                       </div> 
+
+                       <div className="col-xs-6 text-center vehicles-content">
+                         <h3 className="upper">Vehicles</h3>
+                         <ol type="I" className="car-type">
+                           <li className="upper">luxury Sedans</li>
+                           <li className="upper">mini buses</li>
+                           <li className="upper">luxury limo buses</li>
+                           <li className="upper">suv</li>
+                           <li className="upper">vans</li>
+                           <li className="upper">luxury limo buses</li>
+                         </ol>
+                         <a href="#" className="upper" >more info   
+                         <i className="fa fa-arrow-right"></i></a>                
+                       </div>
+                             
+                    </div>
+              </div> 
+        }
+      }
+
+      class Contact extends React.Component{
+        render(){
+        return <div className="row contact">
+                    <div className="container">
+                        <div className="col-xs-6 contact-content text-center">
+                           <h3 className="upper">contact</h3>
+                           <p>28 Jackson Blvd.</p>
+                           <p>Ste Chicago II.</p>
+                           <p>+150 8080 9090</p>
+                            <a href="#" className="upper" >more info   
+                            <i className="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div className="col-xs-6">
+                         <img src="images/07.png" className="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+        }
+      }
+
+      class App extends React.Component{
+      render(){
+       return <div className="container-fluid">
+                    <Header/>
+                    <Content/>
+              </div> ;
+      }
+      }
+
+    ReactDOM.render(<App/>,
+        document.getElementById('root')
+    );
+    </script>
+
+    <script src="js/react.js"></script> 
+    <script src="js/react-dom.js"></script>
+    <script src="js/babel.min.js"></script> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

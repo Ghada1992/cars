@@ -1,0 +1,289 @@
+@font-face{
+  font-family:'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+
+@font-face{ 
+  font-family:'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;	
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans';
+	color: #5c5b5b;
+}
+
+
+
+.upper{ text-transform: uppercase; }
+.main-color{ color: #cc9966; }
+.full-width-col{padding:0;}
+
+/* Header */
+.header{
+	background: url("../images/car66.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover; 
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 50% 30%;
+	height: 100vh;
+	min-height:100vh;
+	color: #fff;	
+	-webkit-clip-path: polygon(100% 80%, 100% 0, 0 0, 0 80%, 50% 100%);
+   clip-path: polygon(100% 80%, 100% 0, 0 0, 0 80%, 50% 100%);
+}
+
+.header .menu h2{
+ margin: 0;
+ font-family:'Open Sans';
+}
+
+.header .menu{padding: 20px 0;}
+
+.header .menu .main-menu{
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	
+}
+
+.header .menu .main-menu li{
+	display: inline-block;
+	margin-left: 15px; 
+}
+
+.header .menu .main-menu li a{
+	text-decoration: none;
+	display: block;
+   color: #fff;
+   font-size: 16px;
+   padding: 10px;
+   font-weight: 600; 
+   -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; 
+
+}
+
+.header .menu .main-menu li a:hover,
+.header .header-content .more-btn:hover{
+	color: #fff;
+	/*background-color: #b68976;*/
+	background-color: #cc9966;
+}
+
+.header .header-content{
+   margin-top: 100px ;
+
+}
+
+.header .header-content h1{
+	font-size: 50px;
+  
+}
+
+.header .header-content p{
+	font-size: 16px;
+	margin: 20px 0;
+
+}
+.header .header-content .more-btn{
+	background-color: #fff;
+	border-radius: 0;
+	color: #5c5b5b;
+	font-size: 18px;
+	padding: 10px 25px;
+	 -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; 
+}
+
+/* header */
+
+/* Content */
+
+
+
+/*.weclome{padding: 75px 0;
+}*/
+.services,
+.weclome,
+.vehicles,
+.contact{
+	/*-webkit-clip-path: polygon(100% 80%, 100% 0, 0 0, 0 80%, 50% 100%);
+    clip-path: polygon(100% 80%, 100% 0, 0 0, 0 80%, 50% 100%);*/
+    padding: 75px 0;
+	/*min-height:100vh;
+	background-color: #ccc;*/
+} 
+
+.weclome,
+.mission,
+.services,
+.vehicles,
+.contact{ position: relative;}
+
+.services .ghada{margin-bottom: 100px;}
+
+
+.services h3,
+.weclome h3,
+.mission-content h3,
+.vehicles-content h3,
+.contact-content h3{
+	position: relative;
+	font-weight: bold;
+}
+
+.services h3:before,
+.weclome h3:before,
+.mission-content h3:before,
+.vehicles-content h3:before,
+.contact-content h3:before{
+	content: '';
+    position: absolute;
+    top: 30px;
+    left: 21%;
+    width: 57%;
+    height: 2px;
+    background-color: #cc9966;
+    margin: 20px 0;
+}
+
+.services h3:before{ width: 57%;}
+
+.weclome h3:before,
+.mission-content h3:before,
+.vehicles-content h3:before,
+.contact-content h3:before{ 
+	width: 30%;
+	left: 35%;
+}
+
+
+.services h5,
+ .weclome h5{ margin-top: 40px;}
+
+.services p,
+.weclome p,
+.mission-content p{
+	line-height: 2;
+	margin-bottom: 20px;
+}
+
+.weclome p,
+.mission-content p{
+	width: 60%;
+    margin: 40px auto;
+}
+.contact-content p:nth-child(2){margin-top: 40px;}
+
+.contact-content p:nth-child(4){margin-bottom: 40px;}
+
+
+.services a,
+.weclome a,
+.mission-content a,
+.vehicles-content a,
+.contact-content a{
+	color: #5c5b5b;
+	text-decoration: none;
+	font-weight: bold;
+	 -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; 
+}
+
+.services a i,
+.weclome a i,
+.mission-content a i,
+.vehicles-content a i,
+.contact-content a i{margin-left: 7px;}
+
+.services a:hover,
+.weclome a:hover,
+.mission-content a:hover,
+.vehicles-content a:hover,
+.contact-content a:hover{color: #cc9966; }
+
+.weclome,
+.vehicles{background-color: #ccc;}
+
+
+/*.welcome-content,
+.mission-content{margin-top: 45px}*/
+
+
+
+.weclome:before,
+.mission:before,
+.vehicles:before,
+.contact:before{
+	content: "";
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	top:-48px;
+	left: 0px;
+	transform:skewY(8deg);
+}
+
+.weclome:before,
+.vehicles:before{background-color: #ccc;}
+
+.mission:before,
+.contact:before{background-color: #fff;}
+
+.weclome:after,
+.mission:after,
+.vehicles:after,
+.contact:after{
+	content: "";
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	top:-48px;
+	right: 0px;
+	transform:skewY(-8deg);
+}
+
+.weclome:after,
+.vehicles:after{background-color: #ccc;}
+
+.mission:after,
+.contact:after{background-color: #fff;}
+
+.car-type {
+	width: 40%;
+	 margin: 40px auto;
+}
+
+.car-type li{ 
+	margin-bottom: 10px;
+ }
+
+@media only screen and (max-width: 768px){
+
+	.services {height: 100vh}
+	.services .col-sm-6:nth-child(1),
+	.services .col-sm-6:nth-child(2){margin-bottom: 30px;}
+	.services {padding: 30px 0;}
+
+	.welcome p,
+	.mission-content{width: 100%}
+
+}
