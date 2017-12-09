@@ -14,8 +14,8 @@ LIMO is a website for vehicles which bulti using react.js.
 ## Credits:
 * photos.
 * font and Icon:
-  * Open Sans Font:(hhttps://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans).
-  * Font Awesome Icons (http://fontawesome.io/icons/).
+  * [Open Sans Font](hhttps://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans).
+  * [Font Awesome Icons](http://fontawesome.io/icons/).
 * Javascript:
   * [jQuery](http://jquery.com/)
   * [Bootstrap](http://getbootstrap.com/)
