@@ -59,13 +59,13 @@
       class Content extends React.Component{
         render(){
           return <div>
-                     <Services  n={services}/>
-                     <Welcome/>
-                     <Mission/>
-                     <Vehicles/>
-                     <Contact/>
-            
-                  </div>
+                   <Services  n={services}/>
+                   <Welcome/>
+                   <Mission/>
+                   <Vehicles/>
+                   <Contact/>
+                   <Footer/>
+                 </div>
         }
       }
 
@@ -181,20 +181,30 @@
         }
       }
 
-      class App extends React.Component{
-      render(){
-       return <div className="container-fluid">
-                    <Header/>
-                    <Content/>
-              </div> ;
+      class Footer extends React.Component{
+        render(){
+             
+        return <div className="row footer">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" frameBorder="0"  allowFullScreen></iframe>
+                </div>
+
       }
+    }
+
+      class App extends React.Component{
+        render(){
+         return <div className="container-fluid">
+                      <Header/>
+                      <Content/>
+                </div> ;
+        }
       }
 
     ReactDOM.render(<App/>,
         document.getElementById('root')
     );
     </script>
-
+    
     <script src="js/react.js"></script> 
     <script src="js/react-dom.js"></script>
     <script src="js/babel.min.js"></script> 
