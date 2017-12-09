@@ -1,5 +1,5 @@
 # LIMO
-LIMO is a website for VEHICLES which bulti using react.js.
+LIMO is a website for vehicles which bulti using react.js.
 
 ## Installation
 * click on clone or download button at the right top of a repository.
